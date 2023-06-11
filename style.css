@@ -1,0 +1,82 @@
+@font-face {
+    font-family:'TTLakesMedium';
+    src: url("fonts/TTLakes/TTLakesMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+* {
+    font-family: 'TTLakesMedium';
+}
+
+body {
+    width: 320px;
+}
+
+/* шапка */
+
+header { 
+    height: 88px;
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;    
+    display: flex;
+    align-items: center;
+}
+
+.icon img {        
+    margin: auto; 
+}
+
+/* содержимое */
+
+main {
+    width: 320px;
+    overflow-x: scroll;
+    border-top: 1px solid #41F6D7;
+    background: #F8F8F8;
+}
+
+.main-header {
+    display: flex;
+    margin-top: 20px;
+}
+
+.main-header h1{
+    margin: 0;
+}
+
+.highlight {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.main-list {
+    display: inline;
+}
+
+.main-list ul {
+    margin: 0; 
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.down {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.picture {
+    margin-top: 20px;
+}
