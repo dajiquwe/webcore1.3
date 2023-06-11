@@ -40,7 +40,6 @@ header {
 
 main {
     width: 320px;
-    overflow-x: scroll;
     border-top: 1px solid #41F6D7;
     background: #F8F8F8;
 }
@@ -60,16 +59,20 @@ main {
 }
 
 .main-list {
-    display: inline;
-}
-
-.main-list ul {
-    margin: 0; 
+    display: flex;
+    margin: 0;
     padding: 0;
+    overflow: scroll;
 }
 
 li {
-    display: inline-block;
+    border: 1px solid red;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+span {
+    
 }
 
 .down {
