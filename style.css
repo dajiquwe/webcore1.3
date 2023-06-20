@@ -9,10 +9,6 @@
     font-family: 'TTLakesMedium';
 }
 
-body {
-    width: 320px;
-}
-
 /* шапка */
 
 header { 
@@ -32,8 +28,32 @@ header {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+}
+
 .icon img {        
     margin: auto; 
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 768px;
+    }
+
+    .divider1 {
+        margin-right: 230px ;
+    }
+
+    .hidden {
+        display: flex;
+    }
+}
+
+@media (min-width: 1120px) {
+    header {
+        display: none;
+    }
 }
 
 /* содержимое */
@@ -47,10 +67,20 @@ main {
 .main-header {
     display: flex;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .main-header h1{
     margin: 0;
+}
+
+.dew {
+    display: flex;
+    align-items: center;
+}
+
+#s {
+    display: none;
 }
 
 .highlight {
@@ -62,13 +92,21 @@ main {
     display: flex;
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 
 li {
-    border: 1px solid red;
     list-style-type: none;
     margin-left: 20px;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: white;
+    border: 2px solid #41F6D7;
+    border-radius: 5%;
 }
 
 .down {
@@ -78,4 +116,58 @@ li {
 
 .picture {
     margin-top: 20px;
+    width: 320px;
+    height: 230px;
+}
+
+#q {
+    margin-top: 20px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 768px;
+        border-top: 1px solid white;
+    }
+
+    .picture {
+        width: 360px;
+        height: 260px;
+        margin-top: 0;
+    }
+
+    .main-content {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1120px) {
+    main {
+        width: 1120px;
+    }
+
+    .picture {
+        width: 532px;
+        height: 383px;
+        margin-top: 0;
+    }
+
+    h1 {
+        margin-right: 230px;
+    }
+
+    #s {
+        display: flex;
+        margin-left: 370px;
+    }
+
+    .dew {
+        margin-left: 20px;
+    }
+
+    .sf {
+        margin-left: 10px;
+    }
 }
