@@ -13,7 +13,6 @@
 
 header { 
     height: 88px;
-    width: 320px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,10 +21,11 @@ header {
 .icon {
     width: 40px;
     height: 40px;
-    background-color: #FF3E79;
+    background: #FF3E79;
     border-radius: 50%;    
     display: flex;
     align-items: center;
+    border: 1px solid #FF3E79;
 }
 
 .hidden {
@@ -36,10 +36,14 @@ header {
     margin: auto; 
 }
 
+h1:before {
+    content: '|';
+    color: #41F6D7;
+    font-size: 40px;
+    padding-right: 15px;
+}
+
 @media (min-width: 768px) {
-    header {
-        width: 768px;
-    }
 
     .divider1 {
         margin-right: 230px ;
@@ -59,7 +63,6 @@ header {
 /* содержимое */
 
 main {
-    width: 320px;
     border-top: 1px solid #41F6D7;
     background: #F8F8F8;
 }
@@ -127,7 +130,6 @@ li:hover {
 
 @media (min-width: 768px) {
     main {
-        width: 768px;
         border-top: 1px solid white;
     }
 
