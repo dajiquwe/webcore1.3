@@ -115,6 +115,8 @@ li:hover {
 .down {
     margin-left: 20px;
     margin-right: 10px;
+    border: 1px solid #F8F8F8;
+    background: #F8F8F8;
 }
 
 .picture {
