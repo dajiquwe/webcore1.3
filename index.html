@@ -8,61 +8,60 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="icon"><img src="icons/icon1.png" alt="#"></div>
-        <div class="logo"><img src="icons/group.png" alt="#"></div>
-        <div class="divider divider1"><img src="icons/divider.png" alt="#"></div>
+    <header class="header">
+        <div class="header__link icon"><img src="icons/icon1.png" alt="#"></div>
+        <div class="header__link logo"><img src="icons/group.png" alt="#"></div>
+        <div class="header__link divider divider1"><img src="icons/divider.png" alt="#"></div>
 
-        <div class="icon hidden"><img src="icons/hidden1.png" alt="#"></div>
-        <div class="icon hidden"><img src="icons/hidden2.png" alt="#"></div>
-        <div class="icon hidden"><img src="icons/hidden3.png" alt="#"></div>
-        <div class="divider hidden"><img src="icons/divider.png" alt="#"></div>
+        <div class="header__link icon hidden"><img src="icons/hidden1.png" alt="#"></div>
+        <div class="header__link icon hidden"><img src="icons/hidden2.png" alt="#"></div>
+        <div class="header__link icon hidden"><img src="icons/hidden3.png" alt="#"></div>
+        <div class="header__link divider hidden"><img src="icons/divider.png" alt="#"></div>
 
-        <div class="icon"><img src="icons/icon2.png" alt="#"></div>
-        <div class="icon"><img src="icons/icon3.png" alt="#"></div>
+        <div class="header__link icon"><img src="icons/icon2.png" alt="#"></div>
+        <div class="header__link icon"><img src="icons/icon3.png" alt="#"></div>
     </header>
-    <main>
-        <div class="main-header">
+    <main class="main">
+        <div class="main__header">
             <!-- <img src="icons/highlight.png" alt="#" class="highlight"> -->
             <h1>Услуги и сервисы</h1>
-            <div id="s">
-            <div class="dew">
-                <span> Оставить заявку</span> 
-                <button class="icon sf"><img src="icons/Group.svg" alt="#" ></button>
-            </div>
-            <div class="dew">
-                <span> Статус ремонта</span> 
-                <button class="icon sf"><img src="icons/icon3.png" alt="#" ></button>
-            </div>
+            <div class="main__links">
+                <div class="main__link">
+                    <span> Оставить заявку</span> 
+                    <button class="main__button icon"><img src="icons/Group.svg" alt="#" ></button>
+                </div>
+                <div class="main__link">
+                    <span> Статус ремонта</span> 
+                    <button class="main__button icon"><img src="icons/icon3.png" alt="#" ></button>
+                </div>
             </div>
         </div>
-        <ul class="main-list">
+        <ul class="main__list">
             <li><a>Ремонтируемые бренды</a></li>
             <li><a>Ремонтируемые устройства</a></li>
             <li><a>Цены на услуги</a></li>
             <li><a>Адреса сервисных центров</a></li>
             <li><a>Специальные цены</a></li>
         </ul>
-        <article class="main-content">
-            <div>
-            <span>
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только y нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+        <article class="main__content">
+            <div class="main__text">
+                <span>
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только y нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                </span>
+                <p>
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера.
+                </p>
             </span>
-            <p >
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера.
-            </p>
-            </span>
-            <label id="q">
-                <button class="down"><img src="icons/down.svg" alt="#" ></button><span>Читать далее</span>
+            <label class="main__content__button">
+                <button class="button-down"><img src="icons/down.svg" alt="#" ></button><span>Читать далее</span>
             </label>
             </div>
-            <div>
+            <div class="main__picture">
                 <img src="pic.jpg" alt="#" class="picture">
             </div>
         </article>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>

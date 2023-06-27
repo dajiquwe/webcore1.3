@@ -11,7 +11,7 @@
 
 /* шапка */
 
-header { 
+.header { 
     height: 88px;
     display: flex;
     justify-content: space-around;
@@ -55,7 +55,7 @@ h1:before {
 }
 
 @media (min-width: 1120px) {
-    header {
+    .header {
         display: none;
     }
 }
@@ -67,22 +67,22 @@ main {
     background: #F8F8F8;
 }
 
-.main-header {
+.main__header {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.main-header h1{
+.main__header h1{
     margin: 0;
 }
 
-.dew {
+.main__link {
     display: flex;
     align-items: center;
 }
 
-#s {
+.main__links {
     display: none;
 }
 
@@ -91,7 +91,7 @@ main {
     margin-right: 20px;
 }
 
-.main-list {
+.main__list {
     display: flex;
     margin: 0;
     padding: 0;
@@ -112,7 +112,7 @@ li:hover {
     border-radius: 5%;
 }
 
-.down {
+.button-down {
     margin-left: 20px;
     margin-right: 10px;
     border: 1px solid #F8F8F8;
@@ -125,7 +125,7 @@ li:hover {
     height: 230px;
 }
 
-#q {
+.main__content__button {
     margin-top: 20px;
     display: block;
 }
@@ -141,7 +141,7 @@ li:hover {
         margin-top: 0;
     }
 
-    .main-content {
+    .main__content {
         display: flex;
         gap: 20px;
     }
@@ -162,16 +162,16 @@ li:hover {
         margin-right: 230px;
     }
 
-    #s {
+    .main__links {
         display: flex;
         margin-left: 370px;
     }
 
-    .dew {
+    .main__link {
         margin-left: 20px;
     }
 
-    .sf {
+    .main__button {
         margin-left: 10px;
     }
 }
